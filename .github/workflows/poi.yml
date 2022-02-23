@@ -12,17 +12,16 @@ name: POI CICD
   #build_name: POI
 
 on:
+  workflow_dispatch:
   push:
     #branches: [ main ]
     branches-ignore: [ main ]
     paths: 
       - apis/poi/**  
-      - .github/workflows/poi.yml
   pull_request:
     branches: [ main ]
     paths: 
       - apis/poi/**
-      - .github/workflows/poi.yml
 
 jobs:
   build_and_test:
