@@ -1,11 +1,11 @@
-name: POI Build image
+name: POI Build Image & Deploy
 env:
   poi_path: apis/poi/web/Dockerfile
   docker_path: apis/poi/web
   registry: openhackl983v804acr.azurecr.io
   repository: devopsoh/api-poi
-  webapp_name: openhack6fq321v2poi
-  staging-url: https://openhack6fq321v2poi-staging.azurewebsites.net/api/healthcheck/poi
+  webapp_name: openhackl983v804poi
+  staging-url: https://openhackl983v804poi-staging.azurewebsites.net/api/healthcheck/poi
   build_name: POI
 on:
   workflow_dispatch:
