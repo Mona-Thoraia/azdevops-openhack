@@ -1,5 +1,5 @@
   
-name: POI CICD
+name: POI CICD Hattan
 
 env:
   poi_path: apis/poi/**

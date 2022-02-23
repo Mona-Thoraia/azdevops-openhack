@@ -1,5 +1,5 @@
 name: POI CICD Uwe
-
+disable:
 env:
   poi_path: apis/poi/**
   docker_path: apis/poi/web
