@@ -1,6 +1,6 @@
 name: POI Build image
 env:
-  poi_path: apis/poi/**
+  poi_path: apis/poi/web/Dockerfile
   docker_path: apis/poi/web
   registry: openhackl983v804acr.azurecr.io
   repository: devopsoh/api-poi
