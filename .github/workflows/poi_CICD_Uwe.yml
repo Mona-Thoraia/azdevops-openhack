@@ -1,5 +1,4 @@
 name: POI CICD Uwe
-disable:
 env:
   poi_path: apis/poi/**
   docker_path: apis/poi/web
@@ -73,7 +72,7 @@ jobs:
       run: docker push $registry/$repository:${{github.run_number}}  
       
   deploy_staging:
-    #if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: docker_build_and_push
     steps:
